@@ -1,6 +1,6 @@
 # TaoVital · Un atlas del aprendizaje
 
-Una pieza interactiva de motion graphics con **18 puntos de lectura**. Un único mundo visual: la cámara acompaña una carpeta que se despliega en módulos, unidades, capítulos y pantallas, y después revela el conjunto.
+Una pieza interactiva de motion graphics con **20 puntos de lectura**. Un único mundo visual: la cámara acompaña una carpeta que se despliega en módulos, unidades, capítulos y pantallas, y después revela el conjunto.
 
 El tono es explicativo y colaborativo. **Sin precios, comparaciones con el año académico ni contenidos de negociación comercial.**
 
@@ -37,6 +37,8 @@ En computador, las carpetas, capítulos, pantallas, ilustraciones y etapas del p
 Los hovers son solo visuales, sin textos emergentes. Hay únicamente dos tipos de pantalla, **Contenido** y **Pregunta**, intercalados. La retroalimentación es la explicación que aparece al responder dentro de la misma pantalla de pregunta; no es un tercer tipo ni una pantalla adicional.
 
 Después de «El conocimiento se transforma» hay tres planos de producción: preguntas, pantallas conceptuales y recursos visuales. En cada uno, una pieza pasa por cuatro etapas y se despliega el volumen de trabajo con un contador y un mosaico: hasta **395 preguntas**, **315 pantallas conceptuales** y **240 recursos visuales**. Se mantienen las cifras de la propuesta, no se suman como si fueran tres cantidades de pantallas independientes.
+
+El recorrido incorpora además la creación de **guías de estudio en PDF** —selección, síntesis, redacción, corrección, diseño editorial, validación, exportación, optimización y publicación para descarga— y la **capacitación presencial en Temuco** para estudiantes y profesores. La inducción aborda acceso, navegación, estudio, evaluaciones, progreso, orientación y canales de soporte; la propuesta contempla hasta dos instancias por semestre.
 
 ## Contenido
 

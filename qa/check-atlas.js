@@ -21,7 +21,7 @@ async (page) => {
     }
     return checks;
   });
-  assert(endpoints.length === 18, 'Expected 18 reading destinations.');
+  assert(endpoints.length === 20, 'Expected 20 reading destinations.');
   assert(endpoints.every(step => !step.horizontalOverflow && !step.copyOverlap && step.footerVisible), 'Desktop layout regression.');
 
   await page.evaluate(() => go(5, { instant: true }));
@@ -67,7 +67,7 @@ async (page) => {
 
   await page.locator('#scrubber').fill('1000');
   await page.locator('#scrubber').dispatchEvent('input');
-  assert(await page.evaluate(() => current === 17), 'Scrubbing must reach the final destination.');
+  assert(await page.evaluate(() => current === 19), 'Scrubbing must reach the final destination.');
 
   await page.locator('#guide-open').click();
   assert(await page.locator('#guide').evaluate(el => el.open), 'Notes did not open.');

@@ -13,7 +13,7 @@ Instalados **solo en esta carpeta**, con:
 npx skills add greensock/gsap-skills --skill gsap-core --skill gsap-timeline --agent opencode --yes
 ```
 
-Aplicación: una línea de tiempo maestra con 18 destinos; cámara compartida; grupos SVG persistentes; conexiones que se trazan; carpetas que anticipan la salida de su contenido; mosaico de 710 pantallas que se reorganiza en los grupos de evaluación. La interfaz permite detener, repetir, avanzar, retroceder y explorar la secuencia.
+Aplicación: una línea de tiempo maestra con 20 destinos; cámara compartida; grupos SVG persistentes; conexiones que se trazan; carpetas que anticipan la salida de su contenido; mosaico de 710 pantallas que se reorganiza en los grupos de evaluación. La interfaz permite detener, repetir, avanzar, retroceder y explorar la secuencia.
 
 GSAP se incluye localmente desde `https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js`. La licencia de la biblioteca es la indicada en su encabezado; no confundirla con la licencia MIT de los archivos de skills. Condiciones: https://gsap.com/standard-license/.
 
@@ -34,7 +34,7 @@ No se ejecutaron scripts de producción de repositorios de terceros ni se contra
 
 **Material:** papel, carpetas e ilustración editorial; jade para curso, ámbar para módulo, verde grisáceo para unidad. Los colores identifican niveles; no son decoraciones independientes.
 
-**Momentos principales:** apertura de carpeta → emergencia de módulos → aproximación a unidad → despliegue de capítulos → pantallas → interacción de muestra → arquitectura completa → 710 marcas → reagrupación de las preguntas → arte real → proceso de construcción → producción de preguntas, contenido e imágenes → continuidad del campus.
+**Momentos principales:** apertura de carpeta → emergencia de módulos → aproximación a unidad → despliegue de capítulos → pantallas → interacción de muestra → arquitectura completa → 710 marcas → reagrupación de las preguntas → arte real → proceso de construcción → producción de preguntas, contenido e imágenes → creación de guía PDF → capacitación presencial en Temuco → continuidad del campus.
 
 **Lectura:** la acción se asienta antes del siguiente avance. Sin audio que interfiera con la conversación. Movimiento reducido conserva el contenido sin viajes de cámara.
 

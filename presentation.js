@@ -24,7 +24,9 @@ const sceneData = [
   { name:'La construcción', kicker:'De los insumos a la experiencia', title:'El conocimiento<br>se <em>transforma.</em>', description:'El material de la escuela se organiza, se sintetiza, se diseña y se convierte en una experiencia que se revisa en conjunto.', fact:['Un proceso','Contenido → estructura → diseño<br>→ interacción → revisión.'], level:'La construcción del curso', caption:'Cada etapa aporta algo distinto. Los contenidos y su revisión pedagógica dan forma al resultado.', note:'Una construcción compartida', next:'Ver el trabajo detrás', script:'La producción conecta varios trabajos: recibir y comprender los insumos, organizar la estructura, sintetizar, diseñar los recursos y programar la interacción. Finalmente revisamos el recorrido.' },
   { name:'Producir las preguntas', kicker:'Detrás de cada interacción · el equipo', title:'Una pregunta.<br><em>Mucho trabajo.</em>', description:'Nuestros profesionales redactan cada pregunta, sus alternativas y su explicación. Después implementan la interacción, la cargan en la plataforma y revisan su funcionamiento.', fact:['Hasta 395','Preguntas con retroalimentación<br>por curso, según la propuesta.'], level:'Diseñar → Implementar → Cargar → Revisar', caption:'Cada pieza recorre el proceso completo. El mosaico representa el banco de preguntas; es un volumen de referencia, no una tarea única.', note:'Una pregunta incluye alternativas y explicación', next:'Ver las pantallas de contenido', script:'Detengámonos en el trabajo del equipo. Una pregunta requiere redacción, alternativas plausibles y una explicación. Luego hay que implementar la respuesta interactiva, integrarla a la plataforma y comprobar que funcione. Ese trabajo se realiza para cada pregunta del banco, hasta trescientas noventa y cinco en la propuesta.' },
   { name:'Producir el contenido', kicker:'Detrás de cada explicación · el equipo', title:'Cada idea<br>se <em>construye.</em>', description:'El equipo transforma la materia en síntesis comprensibles, diseña la lectura, implementa cada pantalla y la carga al curso. Después revisa el contenido y su visualización.', fact:['Hasta 315','Pantallas de síntesis conceptual<br>por curso, según la propuesta.'], level:'Sintetizar → Diseñar → Cargar → Revisar', caption:'Cada marca es una pantalla conceptual. Estas 315 forman parte del conjunto de hasta 710 pantallas del curso.', note:'Síntesis · jerarquía · lectura en celular', next:'Ver los recursos visuales', script:'Las pantallas conceptuales también tienen un proceso propio. Hay que comprender la materia, sintetizarla, organizar su lectura, implementarla e integrarla al recorrido. Después se revisa tanto la explicación como su presentación. La propuesta contempla hasta trescientas quince.' },
-  { name:'Producir las imágenes', kicker:'Detrás de cada recurso visual · el equipo', title:'Cada imagen<br>tiene <em>un proceso.</em>', description:'Nuestros profesionales diseñan o adaptan cada recurso, preparan sus formatos, lo optimizan y lo cargan. Finalmente revisan que explique el tema y se vea bien dentro de la plataforma.', fact:['Hasta 240','Recursos visuales por curso:<br>portadas, banners e ilustraciones.'], level:'Diseñar → Adaptar → Cargar → Revisar', caption:'El volumen incluye recursos de navegación e imágenes de apoyo. Cada uno necesita tratamiento e integración, además del trabajo sobre preguntas y contenido.', note:'Diseño · formatos · optimización · integración', next:'Ampliar la mirada', script:'Las imágenes no terminan cuando se diseñan. Cada recurso necesita formato, adaptación, optimización, carga y revisión en su contexto. Este trabajo se repite para portadas, banners, guías e ilustraciones: hasta doscientos cuarenta recursos según la propuesta.' },
+  { name:'Producir las imágenes', kicker:'Detrás de cada recurso visual · el equipo', title:'Cada imagen<br>tiene <em>un proceso.</em>', description:'Nuestros profesionales diseñan o adaptan cada recurso, preparan sus formatos, lo optimizan y lo cargan. Finalmente revisan que explique el tema y se vea bien dentro de la plataforma.', fact:['Hasta 240','Recursos visuales por curso:<br>portadas, banners e ilustraciones.'], level:'Diseñar → Adaptar → Cargar → Revisar', caption:'El volumen incluye recursos de navegación e imágenes de apoyo. Cada uno necesita tratamiento e integración, además del trabajo sobre preguntas y contenido.', note:'Diseño · formatos · optimización · integración', next:'Crear la guía de estudio', script:'Las imágenes no terminan cuando se diseñan. Cada recurso necesita formato, adaptación, optimización, carga y revisión en su contexto. Este trabajo se repite para portadas, banners, guías e ilustraciones: hasta doscientos cuarenta recursos según la propuesta.' },
+  { name:'Guía de estudio PDF', kicker:'Un recurso que acompaña cada unidad', title:'Del contenido<br>nace una <em>guía.</em>', description:'Seleccionamos los conceptos esenciales, los resumimos y redactamos como material de estudio. Luego diseñamos la guía, la validamos y la preparamos para descargar.', fact:['Guía PDF','Síntesis, redacción y diseño editorial<br>según la malla acordada.'], level:'Seleccionar → Redactar → Diseñar → Publicar', caption:'El archivo final se revisa con la escuela, se exporta, se optimiza y se integra a la unidad para que el estudiante pueda descargarlo.', note:'Lectura clara · versión descargable', next:'Preparar a la comunidad', script:'La guía no es una copia automática del contenido. El equipo selecciona lo esencial, organiza una secuencia, resume y redacta con lenguaje de estudio. Después corrige, diseña la portada y la maqueta, incorpora los esquemas necesarios, valida el contenido con la escuela, exporta un PDF optimizado y comprueba su descarga desde la unidad.' },
+  { name:'Capacitación presencial', kicker:'La plataforma también se aprende acompañados', title:'Comenzamos<br><em>juntos.</em>', description:'Realizamos una capacitación presencial en Temuco para mostrar, explicar y practicar el uso de la plataforma con estudiantes y profesores.', fact:['En Temuco','Sesión guiada para estudiantes<br>y equipo docente.'], level:'Ingresar → Recorrer → Practicar → Acompañar', caption:'Se revisan acceso, navegación, ruta de aprendizaje, capítulos, preguntas, evaluaciones, progreso y canales de soporte. La propuesta contempla hasta 2 instancias por semestre.', note:'Capacitación presencial · Temuco', next:'Ampliar la mirada', script:'La puesta en marcha incluye una capacitación presencial en Temuco. Con estudiantes practicamos el ingreso, la navegación, el estudio de capítulos, las preguntas, evaluaciones y consulta de progreso. Con profesores revisamos el recorrido del alumno, cómo orientarlo, resolver situaciones habituales y utilizar los canales de soporte. La propuesta contempla hasta dos instancias por semestre, coordinadas con la escuela.' },
   { name:'La continuidad', kicker:'Una estructura que puede crecer', title:'Nuevos temas.<br><em>Nuevos recorridos.</em>', description:'El campus reúne cursos con identidad propia. La misma estructura permite incorporar nuevos objetivos y conectar la malla de la escuela.', fact:['Una malla viva','Cada curso aporta<br>una experiencia al conjunto.'], level:'Campus → Cursos → Recorridos', caption:'Esquema de continuidad: la selección de temas y el ritmo de incorporación se acuerdan con la escuela.', note:'El campus conecta las experiencias', next:'Imaginar el primer recorrido', script:'Con una estructura clara podemos pensar la continuidad. La escuela define sus objetivos y la secuencia; cada nuevo curso suma una experiencia al campus y se conecta con los demás.' },
   { name:'El primer recorrido', kicker:'El próximo paso, juntos', title:'Démosle forma<br>al <em>primer recorrido.</em>', description:'Elegimos los aprendizajes, organizamos los contenidos y acordamos la estructura que mejor los acompaña.', fact:['Primero, el objetivo','Después, los módulos.<br>Y desde allí, cada pequeño paso.'], level:'Una experiencia con sentido, de principio a fin', caption:'Un curso se construye desde el aprendizaje que queremos lograr. Ese es nuestro punto de partida.', note:'Del conocimiento al recorrido', next:'Volver al comienzo', script:'Cerremos con una invitación: elegir el propósito del primer curso y revisar juntos cómo organizar sus contenidos. La estructura que acabamos de recorrer nos da un lenguaje común para diseñarlo.' }
 ];
@@ -116,6 +118,71 @@ productionBoards.forEach(board=>{
     ${txt(-335,-196,`HASTA ${board.count} ${board.label}`,'tiny muted','start')}
   `,'work-board');
 });
+
+add('pdf-guide',`
+  ${txt(0,-294,'DE LOS CONTENIDOS A UNA GUÍA DESCARGABLE','label muted')}
+  <path class="connection pdf-route" d="M-285 0H285"/>
+  <g class="pdf-step" transform="translate(-285 0)">
+    <circle r="39" fill="#e3e7d8" stroke="#78916e"/>
+    <path d="M-18-20h27l10 10v31h-37zM8-20v12h11M-10 0h21M-10 8h21" fill="none" stroke="#567550" stroke-width="2"/>
+    ${txt(0,70,'Seleccionar','work-step-label')}${txt(0,92,'Conceptos esenciales + orden','work-detail')}
+  </g>
+  <g class="pdf-step" transform="translate(-95 0)">
+    <circle r="39" fill="#e3e7d8" stroke="#78916e"/>
+    <path d="M-20-22h40v44h-40zM-12-12h24M-12-4h20M-12 4h24M-12 12h15" fill="none" stroke="#567550" stroke-width="2"/>
+    ${txt(0,70,'Redactar','work-step-label')}${txt(0,92,'Síntesis pedagógica','work-detail')}
+  </g>
+  <g class="pdf-step" transform="translate(95 0)">
+    <circle r="39" fill="#e3e7d8" stroke="#78916e"/>
+    <rect x="-23" y="-27" width="46" height="54" rx="2" fill="#f8f4e7" stroke="#567550"/>
+    <rect x="-16" y="-20" width="32" height="17" fill="#b9cab0"/><path d="M-16 5h32M-16 12h25M-16 19h29" stroke="#7b9271" stroke-width="2"/>
+    ${txt(0,70,'Diseñar','work-step-label')}${txt(0,92,'Portada + maquetación','work-detail')}
+  </g>
+  <g class="pdf-step" transform="translate(285 0)">
+    <circle r="39" fill="#285e4e" stroke="#78916e"/>
+    <path class="pdf-download-arrow" d="M0-20v28m-11-9L0 10 11-1M-18 20h36" fill="none" stroke="#f5f1e3" stroke-width="2.5"/>
+    ${txt(0,70,'Publicar','work-step-label')}${txt(0,92,'Validar + exportar + cargar','work-detail')}
+  </g>
+  <g class="pdf-source-pages" transform="translate(-285 -150)">
+    <rect x="-37" y="-46" width="74" height="92" rx="3" fill="#ddd8c8" stroke="#b5bea9" transform="rotate(-7)"/>
+    <rect x="-37" y="-46" width="74" height="92" rx="3" fill="#f9f5e8" stroke="#b5bea9" transform="rotate(5)"/>
+    <path d="M-25-25h50m-50 10h42m-42 10h50m-50 10h35m-35 10h47" stroke="#9ead90" stroke-width="2"/>
+  </g>
+  <g class="pdf-final-cover" transform="translate(285 -156)">
+    <rect x="-48" y="-67" width="96" height="134" rx="4" fill="#faf7ec" stroke="#a5b69a" filter="url(#shadow)"/>
+    <image href="assets/guia.jpg" x="-42" y="-61" width="84" height="122" preserveAspectRatio="xMidYMid slice"/>
+    <g class="pdf-approved"><circle cx="38" cy="56" r="17" fill="#285e4e"/><path d="m30 56 6 6 12-14" fill="none" stroke="#f6f2e5" stroke-width="2.4"/></g>
+  </g>
+  ${txt(-350,178,'RESUMIR','tiny muted','start')}${txt(350,178,'DESCARGAR','tiny muted','end')}
+`,'pdf-guide');
+
+const person=(x,y,role='training-person')=>`<g class="${role}" transform="translate(${x} ${y})"><circle cy="-13" r="8" fill="#6f8b6a"/><path d="M-13 13q1-19 13-19t13 19" fill="#dce4d2" stroke="#6f8b6a"/></g>`;
+add('training',`
+  ${txt(0,-302,'CAPACITACIÓN PRESENCIAL · TEMUCO','label muted')}
+  <g class="training-screen">
+    <rect x="-142" y="-242" width="284" height="145" rx="7" fill="#faf7ec" stroke="#78916e" filter="url(#shadow)"/>
+    <rect x="-128" y="-226" width="256" height="22" rx="3" fill="#285e4e"/>
+    ${txt(-112,-211,'TAOVITAL · CAMPUS','tiny white','start')}
+    <path d="M-113-181h76m-76 14h101m-101 14h88" stroke="#a9b89c" stroke-width="3"/>
+    <circle cx="76" cy="-169" r="24" fill="#dce4d2"/><path d="m65-168 8 8 16-19" fill="none" stroke="#467251" stroke-width="3"/>
+  </g>
+  <g class="training-facilitator">${person(0,-38,'training-person facilitator')}${txt(0,12,'Facilitador','tiny muted')}</g>
+  <path class="connection training-link" d="M-24-18C-90 8-125 40-190 67"/>
+  <path class="connection training-link" d="M24-18C90 8 125 40 190 67"/>
+  <g class="audience audience-students">
+    ${person(-245,62)}${person(-205,45)}${person(-165,62)}${person(-225,101)}${person(-185,101)}
+    ${txt(-205,145,'ESTUDIANTES','label')}${txt(-205,166,'Ingresar · estudiar · evaluar','work-detail')}
+  </g>
+  <g class="audience audience-teachers">
+    ${person(165,62)}${person(205,45)}${person(245,62)}${person(185,101)}${person(225,101)}
+    ${txt(205,145,'PROFESORES','label')}${txt(205,166,'Orientar · acompañar · resolver','work-detail')}
+  </g>
+  <g class="training-topics">
+    ${['Acceso','Navegación','Evaluaciones','Progreso','Soporte'].map((label,i)=>`<g class="training-topic" transform="translate(${(i-2)*135} 236)"><rect x="-55" y="-17" width="110" height="34" rx="17" fill="#e2e7d8" stroke="#a4b494"/>${txt(0,4,label,'tiny')}</g>`).join('')}
+  </g>
+  <g class="temuco-pin" transform="translate(-325 -245)"><path d="M0-17a17 17 0 0 1 17 17c0 13-17 31-17 31S-17 13-17 0A17 17 0 0 1 0-17Z" fill="#b25c43"/><circle r="5" fill="#f5f1e4"/>${txt(29,5,'TEMUCO','label muted','start')}</g>
+`,'training-scene');
+
 folder('future0','Otro tema','CURSO','slate',.56);
 folder('future1','Nuevo recorrido','CURSO','amber',.56);
 add('campus',`<circle r="85" fill="#e3e6d8" stroke="#a2b494"/><circle r="70" fill="none" stroke="#bdc9ae"/>${txt(0,-8,'TAOVITAL','label')}${txt(0,23,'Campus','serif')}<path d="M-85 0h-100m270 0h100M0-85v-80" stroke="#9eaf91" stroke-dasharray="3 5"/>`);
@@ -143,9 +210,11 @@ function state(camera,visible){
   cells.forEach(({index})=>all[`cell${index}`]=pose(1800,850,.05,0));
   ['cover','guide-art','banner','banner2'].forEach(id=>all[id]=pose(2600,1580,.05,0));
   for(let i=0;i<5;i++)all[`process${i}`]=pose(3800,1300,.08,0);
-  all.campus=pose(4800,1600,.08,0);
-  all.future0=pose(5600,1700,.08,0);all.future1=pose(5600,1700,.08,0);
-  all.closing=pose(5600,1700,.7,0);
+  all['pdf-guide']=pose(9200,1600,.08,0);
+  all.training=pose(10400,1600,.08,0);
+  all.campus=pose(11600,1600,.08,0);
+  all.future0=pose(12800,1700,.08,0);all.future1=pose(12800,1700,.08,0);
+  all.closing=pose(12800,1700,.7,0);
   productionBoards.forEach(board=>all[board.id]=pose(...board.origin,.12,0));
   Object.keys(paths).forEach(id=>all[id]=pose(0,0,1,0));
   return {camera,poses:Object.assign(all,visible)};
@@ -178,8 +247,10 @@ states.push(state({x:2600,y:1580,z:1.05},{...evaluated,'evaluation-labels':pose(
 states.push(state({x:3800,y:1300,z:1.1},{cover:pose(3565,1290,1.6,1,-10),banner:pose(3815,1175,1.05,1,5),banner2:pose(3820,1380,1.05,1,-4),'guide-art':pose(4070,1310,1.2,1,9),'art-labels':pose(3800,1300)}));
 states.push(state({x:4800,y:1600,z:1.5},{...Object.fromEntries([0,1,2,3,4].map(i=>[`process${i}`,pose(4800+(i-2)*160,1600+(i%2?-70:50),1.25,1)])),'process-line':pose(4800,1600,1,1)}));
 productionBoards.forEach(board=>states.push(state({x:board.center[0],y:board.center[1],z:1.02},{[board.id]:pose(...board.center)})));
-states.push(state({x:5600,y:1700,z:1.03},{campus:pose(5600,1700),course:pose(5600,1450,.65,1),future0:pose(5320,1700,.6,1,-7),future1:pose(5880,1700,.6,1,7),orbit:pose(5600,1700,1.14,.45,25)}));
-states.push(state({x:5600,y:1450,z:1.05},{course:pose(5600,1450,1.25,1),closing:pose(5600,1450)}));
+states.push(state({x:10400,y:1600,z:1.08},{'pdf-guide':pose(10400,1600)}));
+states.push(state({x:11600,y:1600,z:1.03},{training:pose(11600,1600)}));
+states.push(state({x:12800,y:1700,z:1.03},{campus:pose(12800,1700),course:pose(12800,1450,.65,1),future0:pose(12520,1700,.6,1,-7),future1:pose(13080,1700,.6,1,7),orbit:pose(12800,1700,1.14,.45,25)}));
+states.push(state({x:12800,y:1450,z:1.05},{course:pose(12800,1450,1.25,1),closing:pose(12800,1450)}));
 
 let current=0;
 let master;
@@ -270,6 +341,25 @@ function buildTimeline(){
       }
       master.fromTo(`#${board.id} .work-approved`,{autoAlpha:0},{autoAlpha:1,duration:.25,immediateRender:false},start+2.1);
       master.fromTo(`#${board.id} .work-batch`,{opacity:0,y:12},{opacity:1,y:0,duration:.35,stagger:{amount:.65},ease:'power2.out',immediateRender:false},start+1.6);
+    }
+    if(i===16){
+      const path=$('#pdf-guide .pdf-route'),length=path.getTotalLength();
+      master.fromTo(path,{strokeDasharray:length,strokeDashoffset:length},{strokeDashoffset:0,duration:1.25,ease:'power2.out',immediateRender:false},start+.45)
+        .fromTo('#pdf-guide .pdf-step',{opacity:0,y:15,scale:.9},{opacity:1,y:0,scale:1,duration:.55,stagger:.14,ease:'power3.out',immediateRender:false},start+.55)
+        .fromTo('#pdf-guide .pdf-source-pages',{opacity:0,x:-309,y:-150,rotation:-8},{opacity:1,x:-285,y:-150,rotation:0,duration:.65,ease:'power3.out',immediateRender:false},start+.65)
+        .fromTo('#pdf-guide .pdf-final-cover',{opacity:0,x:305,y:-156,scale:.9},{opacity:1,x:285,y:-156,scale:1,duration:.7,ease:'power3.out',immediateRender:false},start+1.45)
+        .fromTo('#pdf-guide .pdf-download-arrow',{opacity:0,y:-9},{opacity:1,y:0,duration:.45,ease:'power3.out',immediateRender:false},start+1.75)
+        .fromTo('#pdf-guide .pdf-approved',{opacity:0,scale:.75},{opacity:1,scale:1,duration:.35,ease:'back.out(1.4)',immediateRender:false},start+2.05);
+    }
+    if(i===17){
+      master.fromTo('#training .training-screen',{opacity:0,y:-18,scale:.94},{opacity:1,y:0,scale:1,duration:.75,ease:'power3.out',immediateRender:false},start+.35)
+        .fromTo('#training .temuco-pin',{opacity:0,x:-325,y:-257},{opacity:1,x:-325,y:-245,duration:.5,ease:'power3.out',immediateRender:false},start+.5)
+        .fromTo('#training .training-person',{opacity:0,scale:.75},{opacity:1,scale:1,duration:.42,stagger:.055,ease:'power3.out',immediateRender:false},start+.75);
+      $$('#training .training-link').forEach((path,j)=>{
+        const length=path.getTotalLength();
+        master.fromTo(path,{strokeDasharray:length,strokeDashoffset:length},{strokeDashoffset:0,duration:.65,ease:'power2.out',immediateRender:false},start+1+j*.1);
+      });
+      master.fromTo('#training .training-topic',{opacity:0,y:12},{opacity:1,y:0,duration:.5,stagger:.08,ease:'power3.out',immediateRender:false},start+1.45);
     }
     master.addLabel(`step${i}`,i*BEAT);
     // A short hold is encoded as empty playhead time before each next segment.
