@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#eeece3">
+  <title>TaoVital · Un atlas del aprendizaje</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%231f5146'/%3E%3Cpath d='M18 17h28v30H18zM24 25h16M24 32h16M24 39h10' fill='none' stroke='%23eee9dc' stroke-width='3'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css?v=8">
+  <script src="vendor/gsap.min.js" defer></script>
+  <script src="presentation.js?v=8" defer></script>
+</head>
+<body>
+  <div class="texture" aria-hidden="true"></div>
+  <header>
+    <a class="brand" href="#paso-1" aria-label="Volver al inicio">TAOVITAL<span>UN ATLAS DEL APRENDIZAJE</span></a>
+    <div class="header-center">Del conocimiento <i>al recorrido.</i></div>
+    <div class="tools"><button id="guide-open" aria-label="Abrir notas del presentador">Notas ↗</button><button id="fullscreen" aria-label="Pantalla completa" aria-keyshortcuts="f">⛶</button></div>
+  </header>
+  <main id="experience" data-scene="0">
+    <div class="chapter-kicker"><span class="small-line"></span><span id="eyebrow"></span></div>
+    <div class="copy"><h1 id="title" tabindex="-1"></h1><div class="copy-details"><p id="description"></p><div id="fact"></div></div></div>
+    <div class="visual-space" id="visual-space">
+      <svg id="atlas" viewBox="0 0 1100 750" role="img" aria-label="La estructura de una experiencia de aprendizaje" aria-describedby="diagram-desc">
+        <desc id="diagram-desc"></desc>
+        <defs>
+          <linearGradient id="jade" x1="0" y1="0" x2=".85" y2="1"><stop stop-color="#407562"/><stop offset="1" stop-color="#1c473d"/></linearGradient>
+          <linearGradient id="amber" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d6ba83"/><stop offset="1" stop-color="#b8955f"/></linearGradient>
+          <linearGradient id="slate" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#92aca6"/><stop offset="1" stop-color="#567b72"/></linearGradient>
+          <linearGradient id="page" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fffdf6"/><stop offset="1" stop-color="#e4dfce"/></linearGradient>
+          <filter id="shadow" x="-50%" y="-50%" width="200%" height="230%"><feDropShadow dx="0" dy="15" stdDeviation="16" flood-color="#25291d" flood-opacity=".13"/></filter>
+          <clipPath id="art-clip"><rect x="-80" y="-104" width="160" height="208" rx="3"/></clipPath>
+        </defs>
+        <g transform="translate(550 375)"><g id="opening"><g id="camera"><g id="world"></g></g></g></g>
+      </svg>
+      <div id="phone-interaction" class="phone-interaction" hidden>
+        <span class="phone-kicker">COMPRENDER · APLICAR</span><h2>Dos fuerzas,<br>una relación.</h2>
+        <p>¿Qué expresa la interdependencia de Yin y Yang?</p>
+        <button data-answer="wrong">Cada uno actúa de forma aislada.</button><button data-answer="correct">Se necesitan y se regulan mutuamente.</button>
+        <p id="feedback" role="status" hidden></p>
+      </div>
+      <div class="visual-note" id="visual-note"></div>
+    </div>
+    <div class="lower-copy"><span id="level-indicator"></span><p id="caption"></p></div>
+    <nav id="breadcrumbs" aria-label="Niveles del recorrido"></nav>
+  </main>
+  <footer>
+    <div class="transport-left"><button id="previous" aria-label="Anterior" aria-keyshortcuts="ArrowLeft">←</button><button id="pause" aria-label="Pausar animación" aria-keyshortcuts="p">Ⅱ</button><button id="replay" aria-label="Repetir transición" aria-keyshortcuts="r">↺</button></div>
+    <div class="timeline-wrap"><div class="timeline-label"><span id="current-name"></span><span id="counter"></span></div><input id="scrubber" type="range" min="0" max="1000" value="0" step="1" aria-label="Explorar la animación"/><div class="timeline-ticks" id="timeline-ticks"></div></div>
+    <button id="next"><span>Entrar al atlas</span><svg viewBox="0 0 40 20" width="40" aria-hidden="true"><path d="M0 10h36m-8-7 8 7-8 7" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></button>
+  </footer>
+  <p id="announcement" class="sr-only" aria-live="polite" aria-atomic="true"></p>
+  <dialog id="guide" aria-labelledby="guide-title"><div class="dialog-top"><span>NOTAS DEL PRESENTADOR</span><button id="guide-close" aria-label="Cerrar notas">✕</button></div><h2 id="guide-title"></h2><p id="guide-script"></p><h3>Una conversación, no una cotización</h3><p>Este atlas muestra cómo se organiza el contenido y cómo se convierte en una experiencia de estudio. Los nombres temáticos y las distribuciones son ejemplos. El programa y los contenidos se acuerdan con la escuela.</p><h3>Referencia de estructura</h3><p>Según <strong>docs/Propuesta_TaoVital_Campus_Virtual.docx, §3.1–3.3</strong>: hasta 3 módulos, 6 unidades en total, 45 capítulos, 710 pantallas, 395 preguntas y 240 recursos visuales por curso; 12–18 horas de estudio activo. Son capacidades de referencia, no cantidades que deban agotarse.</p><p>Las 710 pantallas reúnen hasta 315 conceptuales y 395 de evaluación. Estas últimas se desglosan en 225 formativas, 120 de unidad y 50 del integrador. Las evaluaciones de unidad e integrador son adicionales al recorrido de lecciones.</p><p>Al definir la malla se debe conciliar la cantidad de preguntas de evaluación de unidad de la propuesta con la regla actual de la aplicación. El atlas sigue el documento de propuesta y no modifica el sistema.</p><h3>Control del recorrido</h3><p>Cada transición se detiene en un punto de lectura. Flechas o espacio avanzan; P pausa o continúa la transición; R la repite. La línea inferior permite explorar la animación en cualquier punto. F activa pantalla completa. Las migas de navegación permiten regresar a un nivel.</p><h3>Diseño y tecnología</h3><p>Coreografía original con cámara continua, objetos persistentes, trazado de conexiones y transformaciones de escala. GSAP se distribuye localmente. Skills oficiales <strong>gsap-core</strong> y <strong>gsap-timeline</strong> instalados en este proyecto. Referencias de dirección y fuentes en <strong>REFERENCIAS.md</strong>.</p></dialog>
+  <noscript>Activa JavaScript para explorar el atlas interactivo.</noscript>
+</body>
+</html>

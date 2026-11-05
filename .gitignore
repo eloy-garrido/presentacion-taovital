@@ -1,0 +1,12 @@
+# Herramientas locales del agente
+.agents/
+skills-lock.json
+
+# Evidencia visual temporal de QA (los scripts y el informe sí se versionan)
+qa/*.png
+
+# Archivos del sistema y editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
