@@ -4,7 +4,7 @@ async (page) => {
   const errors = [];
   page.on('pageerror', error => errors.push(error.message));
   await page.setViewportSize({ width: 1366, height: 768 });
-  await page.goto('http://localhost:4377/?test=atlas');
+  await page.goto('http://localhost:4377/?test=atlas-v10');
 
   const endpoints = await page.evaluate(() => {
     const checks = [];

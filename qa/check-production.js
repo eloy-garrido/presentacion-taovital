@@ -1,7 +1,7 @@
 // Run with the Playwright browser_run_code tool.
 async (page) => {
   const assert = (condition, message) => { if (!condition) throw new Error(message); };
-  await page.goto('http://localhost:4377/?test=production');
+  await page.goto('http://localhost:4377/?test=production-v10');
   const layouts=[];
   for (const viewport of [{width:1366,height:768},{width:1879,height:1047},{width:1920,height:1080}]) {
     await page.setViewportSize(viewport);

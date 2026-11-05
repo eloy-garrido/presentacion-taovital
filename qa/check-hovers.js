@@ -3,7 +3,7 @@ async (page) => {
   const assert = (ok, message) => { if (!ok) throw new Error(message); };
   await page.emulateMedia({ reducedMotion: 'no-preference' });
   await page.setViewportSize({ width: 1440, height: 900 });
-  await page.goto('http://localhost:4377/?test=hover');
+  await page.goto('http://localhost:4377/?test=hover-v10');
   await page.evaluate(() => go(2, { instant: true }));
   const pose = await page.locator('#module1').getAttribute('transform');
   await page.locator('#module1').hover();

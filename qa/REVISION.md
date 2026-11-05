@@ -19,6 +19,8 @@
 - La capacitación distingue estudiantes y profesores; cubre acceso, navegación, evaluaciones, progreso y soporte. Se comunica el alcance de hasta 2 instancias por semestre indicado en la propuesta.
 - La continuidad del campus se desplazó después de estos nuevos momentos para mantener un viaje de cámara progresivo, sin regresar por el mundo visual.
 - `check-guides-training.js`: valida la animación completa, repetición, trazado, posición de documentos, marcador de Temuco, públicos, temas, movimiento reducido y encuadres 1920 × 1080 / 390 × 844.
+- Corrección posterior: el paso 17 ahora utiliza el mismo lenguaje cinético de los gráficos anteriores. Un documento recorre físicamente las cuatro estaciones, cada anillo se completa al llegar y el documento se transforma en la guía final aprobada.
+- Corrección posterior: los temas de capacitación se desplazaron a una fila inferior estable. Ya no cubren al facilitador ni interfieren con las conexiones hacia estudiantes y profesores. Se verificó específicamente en 1879 × 1047, además de escritorio y móvil.
 
 ## Cambios de enfoque
 

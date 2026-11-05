@@ -29,7 +29,8 @@ footer{height:104px;padding:20px 4%;display:flex;align-items:center;gap:35px;bor
 .work-batch{opacity:0}
 main[data-scene="13"] .visual-note,main[data-scene="14"] .visual-note,main[data-scene="15"] .visual-note,main[data-scene="16"] .visual-note,main[data-scene="17"] .visual-note{display:none}
 .pdf-route,.training-link{stroke:#78916e!important;stroke-width:1.6!important}
-.pdf-step,.pdf-source-pages,.pdf-final-cover,.pdf-approved,.pdf-download-arrow,.training-screen,.training-person,.training-topic,.temuco-pin{transform-box:fill-box;transform-origin:center}
+.pdf-step,.pdf-traveler,.pdf-final-cover,.pdf-approved,.pdf-download-arrow,.training-screen,.training-person,.training-topic,.temuco-pin{transform-box:fill-box;transform-origin:center}
+.pdf-ring{stroke-dasharray:277;stroke-dashoffset:277}
 #atlas .training-topic text{font-size:10px}
 #atlas .facilitator+text{font-size:10px}
 #atlas .temuco-pin text{font-size:11px}

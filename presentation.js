@@ -124,29 +124,33 @@ add('pdf-guide',`
   <path class="connection pdf-route" d="M-285 0H285"/>
   <g class="pdf-step" transform="translate(-285 0)">
     <circle r="39" fill="#e3e7d8" stroke="#78916e"/>
+    <circle class="pdf-ring pdf-ring0" r="44" fill="none" stroke="#78916e" stroke-width="2"/>
     <path d="M-18-20h27l10 10v31h-37zM8-20v12h11M-10 0h21M-10 8h21" fill="none" stroke="#567550" stroke-width="2"/>
     ${txt(0,70,'Seleccionar','work-step-label')}${txt(0,92,'Conceptos esenciales + orden','work-detail')}
   </g>
   <g class="pdf-step" transform="translate(-95 0)">
     <circle r="39" fill="#e3e7d8" stroke="#78916e"/>
+    <circle class="pdf-ring pdf-ring1" r="44" fill="none" stroke="#78916e" stroke-width="2"/>
     <path d="M-20-22h40v44h-40zM-12-12h24M-12-4h20M-12 4h24M-12 12h15" fill="none" stroke="#567550" stroke-width="2"/>
     ${txt(0,70,'Redactar','work-step-label')}${txt(0,92,'Síntesis pedagógica','work-detail')}
   </g>
   <g class="pdf-step" transform="translate(95 0)">
     <circle r="39" fill="#e3e7d8" stroke="#78916e"/>
+    <circle class="pdf-ring pdf-ring2" r="44" fill="none" stroke="#78916e" stroke-width="2"/>
     <rect x="-23" y="-27" width="46" height="54" rx="2" fill="#f8f4e7" stroke="#567550"/>
     <rect x="-16" y="-20" width="32" height="17" fill="#b9cab0"/><path d="M-16 5h32M-16 12h25M-16 19h29" stroke="#7b9271" stroke-width="2"/>
     ${txt(0,70,'Diseñar','work-step-label')}${txt(0,92,'Portada + maquetación','work-detail')}
   </g>
   <g class="pdf-step" transform="translate(285 0)">
     <circle r="39" fill="#285e4e" stroke="#78916e"/>
+    <circle class="pdf-ring pdf-ring3" r="44" fill="none" stroke="#78916e" stroke-width="2"/>
     <path class="pdf-download-arrow" d="M0-20v28m-11-9L0 10 11-1M-18 20h36" fill="none" stroke="#f5f1e3" stroke-width="2.5"/>
     ${txt(0,70,'Publicar','work-step-label')}${txt(0,92,'Validar + exportar + cargar','work-detail')}
   </g>
-  <g class="pdf-source-pages" transform="translate(-285 -150)">
-    <rect x="-37" y="-46" width="74" height="92" rx="3" fill="#ddd8c8" stroke="#b5bea9" transform="rotate(-7)"/>
-    <rect x="-37" y="-46" width="74" height="92" rx="3" fill="#f9f5e8" stroke="#b5bea9" transform="rotate(5)"/>
-    <path d="M-25-25h50m-50 10h42m-42 10h50m-50 10h35m-35 10h47" stroke="#9ead90" stroke-width="2"/>
+  <g class="pdf-traveler">
+    <rect x="-39" y="-54" width="78" height="108" rx="4" fill="#faf7ec" stroke="#78916e" filter="url(#shadow)"/>
+    <path d="M-25-31h50m-50 10h42m-42 10h50m-50 10h35m-35 10h47m-47 10h40" stroke="#9ead90" stroke-width="2"/>
+    <rect x="-25" y="30" width="50" height="12" rx="2" fill="#dce4d2"/>
   </g>
   <g class="pdf-final-cover" transform="translate(285 -156)">
     <rect x="-48" y="-67" width="96" height="134" rx="4" fill="#faf7ec" stroke="#a5b69a" filter="url(#shadow)"/>
@@ -345,11 +349,18 @@ function buildTimeline(){
     if(i===16){
       const path=$('#pdf-guide .pdf-route'),length=path.getTotalLength();
       master.fromTo(path,{strokeDasharray:length,strokeDashoffset:length},{strokeDashoffset:0,duration:1.25,ease:'power2.out',immediateRender:false},start+.45)
-        .fromTo('#pdf-guide .pdf-step',{opacity:0,y:15,scale:.9},{opacity:1,y:0,scale:1,duration:.55,stagger:.14,ease:'power3.out',immediateRender:false},start+.55)
-        .fromTo('#pdf-guide .pdf-source-pages',{opacity:0,x:-309,y:-150,rotation:-8},{opacity:1,x:-285,y:-150,rotation:0,duration:.65,ease:'power3.out',immediateRender:false},start+.65)
-        .fromTo('#pdf-guide .pdf-final-cover',{opacity:0,x:305,y:-156,scale:.9},{opacity:1,x:285,y:-156,scale:1,duration:.7,ease:'power3.out',immediateRender:false},start+1.45)
-        .fromTo('#pdf-guide .pdf-download-arrow',{opacity:0,y:-9},{opacity:1,y:0,duration:.45,ease:'power3.out',immediateRender:false},start+1.75)
-        .fromTo('#pdf-guide .pdf-approved',{opacity:0,scale:.75},{opacity:1,scale:1,duration:.35,ease:'back.out(1.4)',immediateRender:false},start+2.05);
+        .fromTo('#pdf-guide .pdf-step',{opacity:0,y:15,scale:.9},{opacity:1,y:0,scale:1,duration:.55,stagger:.14,ease:'power3.out',immediateRender:false},start+.4)
+        .fromTo('#pdf-guide .pdf-traveler',{x:-285,y:-145,autoAlpha:1},{x:-285,y:-145,autoAlpha:1,duration:.01,immediateRender:false},start+.4);
+      for(let station=0;station<4;station++){
+        const ring=$(`#pdf-guide .pdf-ring${station}`),ringLength=ring.getTotalLength();
+        const cue=start+.52+station*.47;
+        if(station)master.to('#pdf-guide .pdf-traveler',{x:(station-1.5)*190,duration:.38,ease:'power2.inOut'},cue-.25);
+        master.fromTo(ring,{strokeDasharray:ringLength,strokeDashoffset:ringLength},{strokeDashoffset:0,duration:.4,ease:'power2.out',immediateRender:false},cue);
+      }
+      master.fromTo('#pdf-guide .pdf-final-cover',{opacity:0,x:305,y:-156,scale:.9},{opacity:1,x:285,y:-156,scale:1,duration:.55,ease:'power3.out',immediateRender:false},start+1.88)
+        .to('#pdf-guide .pdf-traveler',{autoAlpha:0,duration:.3,ease:'power2.out'},start+1.92)
+        .fromTo('#pdf-guide .pdf-download-arrow',{opacity:0,y:-9},{opacity:1,y:0,duration:.38,ease:'power3.out',immediateRender:false},start+1.92)
+        .fromTo('#pdf-guide .pdf-approved',{opacity:0,scale:.75},{opacity:1,scale:1,duration:.3,ease:'back.out(1.4)',immediateRender:false},start+2.18);
     }
     if(i===17){
       master.fromTo('#training .training-screen',{opacity:0,y:-18,scale:.94},{opacity:1,y:0,scale:1,duration:.75,ease:'power3.out',immediateRender:false},start+.35)
@@ -359,7 +370,9 @@ function buildTimeline(){
         const length=path.getTotalLength();
         master.fromTo(path,{strokeDasharray:length,strokeDashoffset:length},{strokeDashoffset:0,duration:.65,ease:'power2.out',immediateRender:false},start+1+j*.1);
       });
-      master.fromTo('#training .training-topic',{opacity:0,y:12},{opacity:1,y:0,duration:.5,stagger:.08,ease:'power3.out',immediateRender:false},start+1.45);
+      $$('#training .training-topic').forEach((topic,j)=>{
+        master.fromTo(topic,{opacity:0,y:248},{opacity:1,y:236,duration:.5,ease:'power3.out',immediateRender:false},start+1.45+j*.08);
+      });
     }
     master.addLabel(`step${i}`,i*BEAT);
     // A short hold is encoded as empty playhead time before each next segment.
